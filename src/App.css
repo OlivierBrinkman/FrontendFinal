@@ -229,6 +229,7 @@ article {
 .file-article-title {
     font-size: 14px;
     font-weight: 500;
+    margin-bottom: 30px;
     color: var(--black-4);
 }
 .file-icon {
@@ -241,6 +242,7 @@ article {
   width: 75%;
   margin-top: 20px;
   background: var(--theme-color-1);
+  text-decoration: none;
   color: var(--white-1);
   border: none;
   border-radius: var(--radius-m);

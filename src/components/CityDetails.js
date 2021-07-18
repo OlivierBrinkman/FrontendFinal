@@ -17,7 +17,7 @@ export default class CityDetails extends Component {
             temp : 0,
             feels_like: 0,
             wind: {}, 
-            apiKey: " > YOUR API KEY < ",
+            apiKey: "df716b8afa6bab5a0fff51fadb22005f",
             forecastRespone: []
         };
     }

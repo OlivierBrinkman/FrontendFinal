@@ -75,5 +75,5 @@ setCurrentLocation(location) {
   }
 
   export default GoogleApiWrapper({
-    apiKey: ' > YOUR API KEY <'
+    apiKey: 'AIzaSyA1LFMQffm6nsZ7VHCsSYjaVtDxhBoxN2M'
   })(MapContainer)
