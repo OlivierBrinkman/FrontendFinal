@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import Loader from "../components/Loader";
-import { Link, useHistory } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import axios from "axios";
 
 function SignUp() {
@@ -97,11 +97,11 @@ function SignUp() {
             </form>
           )}
         </div>
-        <Link className="signup-signin-redirect-text" to="/signin">
+        <NavLink className="signup-signin-redirect-text" to="/signin">
           <div className="signup-signin-redirect">
             <span>Sign in here</span>
           </div>
-        </Link>
+        </NavLink>
       </div>
     </div>
   );
