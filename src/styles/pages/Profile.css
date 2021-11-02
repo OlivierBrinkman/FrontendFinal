@@ -1,0 +1,33 @@
+.profile-info-content {
+	width: 100%;
+	display: flex;
+	margin-top: 20px;
+	gap: 30px;
+}
+
+.profile-details-value {
+	font-size: 14px;
+	font-weight: 600;
+	line-break: anywhere;
+	color: var(--main-black);
+}
+
+.profile-details-label {
+	display: block;
+	font-size: 12px;
+	font-weight: 500;
+	color: #5D6D7E
+}
+
+.profile-info-item {
+	margin-bottom: 15px;
+}
+
+.profile-info-container {
+	padding: 15px;
+	width: 50%;
+	background: var(--white-1);
+	height: 267px;
+	border-radius: 15px;
+	box-shadow: var(--box-shadow-1);
+}

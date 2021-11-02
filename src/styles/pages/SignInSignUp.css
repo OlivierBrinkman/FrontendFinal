@@ -1,0 +1,101 @@
+.auth-form label {
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.auth-input {
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+.auth-form {
+	display: flex;
+	flex-direction: column;
+	background: var(--white-1);
+	box-shadow: var(--box-shadow-1);
+	border-radius: 12px;
+	padding: 25px;
+	width: 500px;
+	margin: 0 auto;
+}
+
+.signup-form {
+	min-height: 350px;
+}
+
+.signin-form {
+	min-height: 265px;
+}
+
+.auth-form h1 {
+	color: var(--black);
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+.auth-form p {
+	font-size: 14px;
+}
+
+form input:focus {
+	outline: none;
+	background: var(--white-2);
+}
+
+.form-button:hover {
+	cursor: pointer;
+}
+
+.signup-signin-redirect {
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 15px;
+	padding: 20px 25px 20px 25px;
+	background: var(--white-1);
+	box-shadow: var(--box-shadow-1);
+	border-radius: 12px;
+	text-align: center;
+	color: var(--theme-color-3);
+	font-weight: 600;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.signup-signin-redirect:hover {
+	background: var(--white-3);
+	cursor: pointer;
+}
+
+.signup-signin-redirect-text {
+	text-decoration: none;
+}
+
+.auth-button {
+	padding: 15px;
+	width: 100%;
+	font-size: 14px;
+	box-shadow: var(--box-shadow-1);
+	border-radius: 5px;
+	background: var(--theme-color-2);
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.auth-button:hover {
+	background: var(--theme-color-3);
+}
+
+.error-message {
+	font-size: 12px;
+	font-weight: 600;
+	color: #FF0000;
+	margin-bottom: 10px;
+}
+
+.feedback-message {
+	font-size: 12px;
+	font-weight: 600;
+	color: #2ECC71;
+	margin-bottom: 10px;
+}

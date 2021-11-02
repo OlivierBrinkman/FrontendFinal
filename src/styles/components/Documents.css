@@ -1,0 +1,30 @@
+.documents-section h3 {
+    margin-bottom: 10px;
+}
+
+.documents-row {
+    display: flex;
+    gap: 50px;
+}
+
+.document-item {
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    background: var(--white-1);
+    box-shadow: var(--box-shadow-1);
+    text-align: center;
+}
+
+.document-item h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.document-item span {
+    font-size: 12px;
+    font-weight: 500;
+    
+}
+

@@ -1,0 +1,257 @@
+:root {
+	--black: #000000;
+	--white-1: #FFFFFF;
+	--white-2: #FBFCFC;
+	--white-3: #F8F9F9;
+	--white-4: #f3f6f8;
+	--white-5: #EAEDED;
+	--theme-color-1: #212F3C;
+	--theme-color-2: #1B2631;
+	--theme-color-3: #FA5000;
+	--radius-s: 2px;
+	--radius-m: 4px;
+	--radius-l: 8px;
+	--shadow-s: 0 1px 2px rgba(0, 0, 0, .1);
+	--shadow-m: 0 2px 4px rgba(0, 0, 0, .1);
+	--shadow-l: 0 6px 8px rgba(0, 0, 0, .1);
+	--box-shadow-1: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+	--box-shadow-2: 0px 6.6px 5.3px rgba(0, 0, 0, 0.024), 0px 22.1px 17.9px rgba(0, 0, 0, 0.036), 0px 99px 80px rgba(0, 0, 0, 0.06);
+	--border-default: 1px solid #E5E7E9;
+}
+
+@font-face {
+	font-family: 'OpenSans';
+	src: url("../assets/font/OpenSans-Regular.ttf");
+}
+
+* {
+	font-family: "OpenSans";
+}
+
+html {
+	background: var(--white);
+	margin-bottom: 5%;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+html::-webkit-scrollbar {
+	display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+article {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/* @Application */
+
+.menu-title {
+	font-weight: 400;
+	width: 100%;
+	color: #ffffff;
+	display: block;
+	font-size: 20px;
+	float: left;
+}
+
+.menu-logo {
+	background: var(--theme-color-3);
+	padding: 15px;
+	position: fixed;
+	top: 0;
+	font-weight: 600;
+	box-shadow: var(--box-shadow-2);
+	border-radius: 0px 0px 15px 0px;
+}
+
+.menu-list {
+	list-style-type: none;
+	display: flex;
+	padding: 0px;
+	margin: 0px;
+	align-items: center;
+	color: var(--white-1);
+	justify-content: left;
+	background-color: var(--theme-color-1);
+	width: 100%;
+	z-index: 100;
+}
+
+.menu-item {
+	display: block;
+	text-decoration: none;
+	padding-right: 40px;
+	text-align: center;
+	padding: 15px;
+	font-weight: 500;
+	text-decoration: none;
+	width: 175px;
+	border-top: 3px solid transparent;
+	box-sizing: border-box;
+}
+
+.menu-item:hover {
+	background: var(--theme-color-2);
+}
+
+.menu-item-link:hover {
+	cursor: pointer;
+}
+
+.menu-item-active {
+	background: var(--theme-color-2);
+}
+
+.menu-item-link {
+	text-decoration: none;
+	color: var(--white-1);
+}
+
+.menu-title-link {
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-flex;
+}
+
+.menu-title-link img {
+	margin-right: 10px;
+}
+
+.page-jumbotron {
+	background: var(--theme-color-1);
+	width: 100%;
+	height: 168px;
+	box-shadow: inset 0px -97px 98px -90px rgba(0, 0, 0, 0.75);
+}
+
+.page-container {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 70%;
+	margin: auto;
+}
+
+.page-title {
+	color: var(--white-1);
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.page-list-results {
+	overflow: auto;
+	max-height: 482px;
+	margin-top: 7px;
+}
+
+.page-list-results::-webkit-scrollbar {
+	display: none;
+}
+
+.default-button {
+	margin-top: 15px;
+	width: 100%;
+	padding: 10px;
+	border-radius: 0px;
+	border: none;
+	border-radius: 5px;
+	font-weight: 600;
+	background: var(--theme-color-1);
+	color: #FFFFFF;
+}
+
+.maps-container {
+	border-radius: 15px;
+	margin-top: 30px;
+	background: var(--white-1);
+	box-shadow: var(--box-shadow-1);
+}
+
+form input {
+	font-size: 15px;
+	padding: 10px;
+	color: var(--black);
+	padding-left: 15px;
+	padding-right: 15px;
+	background: var(--white-1);
+	border: var(--border-default);
+	width: -webkit-fill-available;
+}
+
+
+/* END @Application */
+
+
+/* Mobile CSS */
+
+@media only screen and (max-width: 1600px) {
+	.page-container {
+		width: 90%;
+		padding-top: 50px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.home-section {
+		display: block;
+	}
+	.home-intro-section {
+		display: block;
+	}
+	.gallery-row,
+	.profile-info-content,
+	.documents-row {
+		display: block;
+	}
+	.gallery-item,
+	.document-item {
+		width: auto;
+		text-align: center;
+	}
+	.home-article {
+		width: auto;
+	}
+	.country-details-container {
+		display: block;
+	}
+	.details-container {
+		margin-bottom: 15px;
+	}
+	.country-info-container {
+		margin-right: 0px;
+		width: 100%;
+	}
+	.country-details-flag-container {
+		width: 100%;
+		margin-top: 15px;
+	}
+	.city-details-container {
+		display: block;
+	}
+	.auth-form {
+		width: 90%;
+	}
+	.signup-signin-redirect {
+		width: 90%;
+	}
+	.section-flex-forecast {
+		display: block;
+	}
+	.week-forecast-col,
+	.day-forecast-col {
+		width: 100%;
+		margin: 0px;
+		margin-bottom: 15px;
+	}
+}

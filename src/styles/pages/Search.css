@@ -1,0 +1,271 @@
+/* @Countries */
+
+.search-container {
+	box-shadow: var(--box-shadow-2);
+	border-radius: 30px;
+	height: 62px;
+}
+
+.search-container span {
+	font-size: 13px;
+}
+
+.search-widget {
+	padding: 15px 15px;
+	height: 30px;
+	font-weight: 600;
+	border-radius: 20px;
+}
+
+.main-search-widget {
+	margin-top: 20px;
+}
+
+.search-widget::placeholder {
+	color: #ccc;
+	font-weight: 500;
+}
+
+.search-widget:focus::placeholder {
+	color: #999;
+}
+
+
+/* END @Countries */
+
+
+/* @CountryDetails */
+
+.details-container {
+	width: -webkit-fill-available;
+	box-shadow: var(--box-shadow-1);
+	background: var(--white-1);
+	height: inherit;
+	border-radius: 12px;
+}
+
+.details-container-label {
+	font-size: 10px;
+	color: #999;
+	font-weight: 600;
+	margin-bottom: 0px;
+	font-size: 12px;
+}
+
+.details-container-value {
+	font-size: 14px;
+	font-weight: 700;
+	color: var(--theme-color-1);
+}
+
+.details-container-value-link {
+	font-size: 14px;
+}
+
+.details-container-value-last {
+	margin-bottom: 0px;
+}
+
+.content-container {
+	padding-bottom: 30px;
+}
+
+.country-details-container {
+	display: flex;
+	margin-top: 20px;
+	gap: 30px;
+}
+
+.country-details-row {
+	padding: 10px 15px 10px 15px;
+	border-bottom: 1px solid #F1F1F1;
+}
+
+.remove-row-padding {
+	padding: 0px;
+}
+
+.country-details-row-last {
+	border-bottom: none;
+}
+
+.country-details-title {
+	padding: 15px;
+	border-bottom: 1px solid #F1F1F1;
+}
+
+.country-details-flag-container {
+	width: 100%;
+}
+
+.country-flag-image {
+	width: 100%;
+	border-radius: 12px;
+}
+
+
+/* END @CountryDetails */
+
+
+/* CityDetails */
+
+.forecast-table {
+	height: auto;
+}
+
+.forecast-table-row {
+	display: flex;
+	max-height: 50px;
+	background: var(--white-1);
+	border-bottom: 1px solid #F1F1F1;
+	border-left: 1px solid #F1F1F1;
+	border-right: 1px solid #F1F1F1;
+}
+
+.forecast-table-row:hover {
+	background: var(--white-3);
+}
+
+.forecast-table-col-image {
+	text-align: right;
+	flex: 1;
+	padding: 0px 15px 0px 15px;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.forecast-table-col {
+	text-align: left;
+	flex: 1;
+	padding: 15px;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.forecast-table-header {
+	background: var(--theme-color-1);
+	display: flex;
+	color: var(--white-1);
+	border-radius: 12px 12px 0px 0px;
+}
+
+.section-flex-forecast {
+	display: flex;
+	gap: 30px;
+}
+
+.day-forecast-col {
+	width: 50%;
+	padding-bottom: 10px;
+	background-color: var(--white-1);
+	border-radius: 0px 0px 12px 12px;
+	box-shadow: var(--box-shadow-1);
+}
+
+.forecast-headers-container {
+	background: var(--theme-color-1);
+	margin-top: 10px;
+	padding: 15px;
+}
+
+.forecast-header {
+	color: var(--white-1);
+}
+
+.country-info-container {
+	width: 30%;
+	box-sizing: border-box;
+	box-shadow: var(--box-shadow-1);
+	background: var(--white-1);
+	height: auto;
+	border-radius: 12px;
+	border: 1px solid #f1f1f1;
+	padding-bottom: 10px;
+}
+
+
+/* END @CityDetails */
+
+.city-header-fieldset h1 {
+	font-size: 22px;
+}
+
+.city-details {
+	margin-bottom: 50px;
+}
+
+.city-details-content {
+	margin-top: 20px;
+}
+
+.city-details-content h3 {
+	margin-top: 20px;
+}
+
+.city-details-label,
+.profile-details-label {
+	display: block;
+	font-size: 12px;
+	font-weight: 500;
+	color: #5D6D7E
+}
+
+.city-details-value {
+	font-size: 15px;
+	margin-bottom: 5px;
+	font-weight: 600;
+}
+
+.city-info-container {
+	margin-right: 20px;
+	margin-top: 10px;
+	width: 14%;
+	padding: 12px;
+	background: #ffffff;
+	display: inline-block;
+}
+
+.city-info-container h4,
+.profile-info-container h4 {
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.city-info-container:hover {
+	background: var(--white-2);
+	cursor: default;
+}
+
+.city-info-item {
+	margin-top: 10px;
+}
+
+.week-forecast-col,
+.day-forecast-col {
+	width: 50%;
+	padding-bottom: 10px;
+	background-color: var(--white-1);
+	border-radius: 0px 0px 12px 12px;
+	box-shadow: var(--box-shadow-1);
+}
+
+.text-align-left {
+	text-align: left;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.text-align-right {
+	text-align: right;
+}
+
+.city-details-container {
+	display: flex;
+	margin-top: 20px;
+	gap: 30px;
+}
+
+
+/* End City Details */

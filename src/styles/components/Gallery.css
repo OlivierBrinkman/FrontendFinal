@@ -1,0 +1,47 @@
+
+.gallery-section h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.gallery-row {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.gallery-item {
+    width: 100%;
+    border-radius: 15px;
+    padding: 15px;
+    background: var(--white-1);
+    box-shadow: var(--box-shadow-1);
+    transition: 100ms;
+}
+
+.gallery-item img {
+    width: -webkit-fill-available;
+    height: 280px;
+    border-radius: 12px;
+}
+
+.gallery-item-text {
+    padding: 10px 0px 10px 0px;
+}
+
+.gallery-item-text h4 {
+   font-size: 14px;
+   font-weight: 600;
+   margin-bottom: 5px;
+}
+
+.gallery-item-text span {
+    padding: 10px 0px 10px 0px;
+    font-size: 12px;
+}
+
+
+
+

@@ -1,0 +1,11 @@
+.loading-container {
+    width: 100%; 
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    position: relative;
+    top: 100px;
+}
+
+.loading-gif {
+    width: 30px;
+}
