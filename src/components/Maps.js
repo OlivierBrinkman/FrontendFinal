@@ -28,9 +28,9 @@ export class MapContainer extends React.Component {
     }
     else {
       if(this.state.isCountry){
-        fetch("https://restcountries.eu/rest/v2/name/" + this.state.selectionKey)
+        fetch("https://restcountries.com/v3.1/name/" + this.state.selectionKey)
         .then(res => res.json()).then((result) => {
-          this.setState({lat: result[0].latlng[0], long : result[0].latlng[1], isLoading : false});   
+          this.setState({lat: result[0].latlng[0], long : result[0].latlng[1]});   
         }) 
         .catch(() => {
           alert('Unable to find selected location');
@@ -55,21 +55,13 @@ setCurrentLocation(location) {
         position: 'relative'
       }
 
-      if(!this.state.isLoading) {
         return (
           <Map initialCenter={{lat:this.state.lat, lng: this.state.long}} containerStyle={style} google={this.props.google} zoom={this.state.zoom}>
             <Marker position={{ lat: this.state.lat, lng: this.state.long }}  name={'Current location'} />
           </Map>
         );
-      }
-      else { 
-        return (      
-          <div className="loading-maps-container">
-               <img id="page-loader-gif" src={Loader} />
-          </div>
 
-        );
-      }
+      
 
     }
   }

@@ -1,0 +1,24 @@
+.list-item {
+    display: inline-block;
+    height: auto;
+    display: -moz-inline-box;
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    background: #ffffff;
+    list-style-type: none;
+  }
+
+.list-item:hover  {
+    background: var(--white-3);
+    cursor:pointer!important;
+  
+}
+
+.list-item-title {
+    font-size: 13px;
+    font-weight: 600;
+    
+}

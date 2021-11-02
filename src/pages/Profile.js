@@ -4,35 +4,30 @@ import { Link, useHistory } from "react-router-dom";
 import Loader from "../assets/Loader.gif"
 import Session from "../components/Session";
 import Maps from "../components/Maps";
+import BreadCrumbs from '../components/BreadCrumbs';
 
 function Profile() {
 
-    const [isLoading, setIsLoading] = useState(true);
     const [session, setSession] = useState({})
-    const [currentLocation, setCurrentLocation] = useState({})
-
     const [lat, setLat] = useState(0);
     const [long, setLong] = useState(0);
-
     let history = useHistory();
 
     useEffect(() => {
         setSession(JSON.parse(Session.getSession()))
-        setIsLoading(false);
         if(localStorage.getItem("session") === null) {
             history.push("/signin")
         }
+    });
 
-      });
-
-      var getLocation = function () {
+    var getLocation = function () {
         navigator.geolocation.getCurrentPosition(setLocation);
-      }
+    }
 
-      var setLocation = function (position) {
+    var setLocation = function (position) {
             setLat(position.coords.latitude);
             setLong(position.coords.longitude);
-      }
+    }
 
     var logout = function() {
         Session.closeSession();
@@ -40,11 +35,13 @@ function Profile() {
         window.location.reload();
     }
 
-    if(!isLoading) {
+   
         return (
-            <div className="component-section">
-              <h1 className="profile-header">Profile Page</h1>
-            <div className="profile-content">
+            <div className="page-container">
+        <BreadCrumbs startPage="Profile" country="" city="" pageIndex="0" />
+        <h1 className="page-title">Profile Page</h1>
+
+                    <div className="profile-content">
                 <section className="profile-info-container">
                     <h3>Welcome {session.username}</h3>
                     <div className="profile-info-item">
@@ -74,30 +71,11 @@ function Profile() {
                 <Maps isCurrentLocation={true} />
             </section>
             </div>
-           
         </div>
-        );
-
-     
-    }
-    else {
-        return ( 
-            <img id="page-loader-gif" src={Loader} />
-        )
-    }
-
-
   
-    
-
-        
-}
-
-
-
-    
-
-
+       
+        );     
+    }
 
 export default Profile;
 

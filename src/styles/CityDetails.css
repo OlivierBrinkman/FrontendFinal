@@ -1,0 +1,130 @@
+
+.city-header-fieldset h1 {
+    font-size: 22px;
+  }
+  
+  .city-details {
+    margin-bottom: 50px;
+  }
+  
+  .city-details-content {
+    margin-top: 20px;
+  }
+  
+  .city-details-content h3 {
+    margin-top: 20px;
+  }
+  
+  .city-details-label,
+  .profile-details-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: #5D6D7E
+  }
+  
+  .city-details-value {
+    font-size: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  
+  .city-info-container {
+    margin-right: 20px;
+    margin-top: 10px;
+    width: 14%;
+    padding: 12px;
+    background: #ffffff;
+    display: inline-block;
+  }
+  
+  .city-info-container h4,
+  .profile-info-container h4 {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .city-info-container:hover {
+    background: var(--white-2);
+    cursor: default;
+  }
+  
+  .city-info-item {
+    margin-top: 10px;
+  }
+
+.forecast-table {
+  height: auto;
+
+}
+
+.forecast-table-header {
+  background: var(--theme-color-1);
+  display: flex;
+  color: var(--white-1);
+}
+
+.forecast-table-row {
+  display: flex;
+  max-height: 50px;
+  background: var(--white-1);
+  border-bottom: 1px solid #F1F1F1;
+  border-left: 1px solid #F1F1F1;  
+  border-right: 1px solid #F1F1F1;
+}
+  
+.forecast-table-col {
+  text-align: left;
+  flex: 1;
+  padding: 15px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.forecast-table-col-image {
+  text-align: right;
+  flex: 1;
+  padding: 0px 15px 0px 15px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.forecast-headers-container {
+  background: var(--theme-color-1);
+  margin-top: 10px;
+  padding: 15px;
+
+}
+
+.forecast-header {
+  color: var(--white-1);
+}
+
+.section-flex { 
+  display: flex;
+  margin-top: 15px;
+}
+
+.week-forecast-col,
+.day-forecast-col {
+width: 50%;
+box-shadow: var(--shadow-s);
+}
+
+
+.week-forecast-col {
+  margin-left: 15px;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
