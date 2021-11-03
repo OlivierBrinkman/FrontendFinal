@@ -5,6 +5,7 @@ import NumberFormat from "react-number-format";
 import BreadCrumbs from "../components/BreadCrumbs";
 import SimpleDateTime from "react-simple-timestamp-to-date";
 import Loader from "../components/Loader";
+import ForecastTableItem from "../components/ForecastTableItem"
 function CityDetails() {
 
   //Variables and states
@@ -20,7 +21,7 @@ function CityDetails() {
   //Get weather by country name and coordinates
   useEffect(() => {
     setLoading(true);
-    let apiKey = "API KEY HERE";
+    let apiKey = "df716b8afa6bab5a0fff51fadb22005f";
     let weatherByCityNamePath ="https://api.openweathermap.org/data/2.5/weather?q="+sessionStorage.getItem("city")+"&appid="+apiKey +"&units=metric";
     let weatherByCoordinatesPath ="https://api.openweathermap.org/data/2.5/onecall?lat=";
   
@@ -138,46 +139,14 @@ function CityDetails() {
                     <span>Time</span>
                   </div>
                   <div className="forecast-table-col  text-align-center">
-                    <span>Time</span>
+                    <span>Temperature</span>
                   </div>
                   <div className="forecast-table-col text-align-right">
                     <span>Weather</span>
                   </div>
                 </div>
                 {hourlyForecast.map((forecast) => (
-                  <item className="forecast-table-row">
-                    <div className="forecast-table-col">
-                      <SimpleDateTime
-                        timeSeparator=":"
-                        format="MYD"
-                        showTime="1"
-                        showDate="0"
-                        meridians="1"
-                      >
-                        {forecast.dt}
-                      </SimpleDateTime>
-                    </div>
-                    <div className="forecast-table-col  text-align-center">
-                      <NumberFormat
-                        decimalScale="0"
-                        decimalSeparator=""
-                        displayType={"text"}
-                        value={forecast.temp}
-                      />{" "}
-                      ℃{" "}
-                    </div>
-                    <div className="forecast-table-col-image">
-                      <img
-                        id="wicon"
-                        src={
-                          "http://openweathermap.org/img/w/" +
-                          forecast.weather[0].icon +
-                          ".png"
-                        }
-                        alt="Weather icon"
-                      />
-                    </div>
-                  </item>
+                  <ForecastTableItem dateTime={forecast.dt} temp={forecast.temp} iconCode={forecast.weather[0].icon} />
                 ))}
               </div>
               <div className="forecast-table week-forecast-col">
@@ -186,60 +155,14 @@ function CityDetails() {
                     <span>Day</span>
                   </div>
                   <div className="forecast-table-col  text-align-center">
-                    <span>Minimum</span>
-                  </div>
-                  <div className="forecast-table-col  text-align-center">
-                    <span>Maximum</span>
+                    <span>Temperature</span>
                   </div>
                   <div className="forecast-table-col text-align-right">
                     <span>Weather</span>
                   </div>
                 </div>
                 {dailyForecast.map((forecast) => (
-                  <item className="forecast-table-row">
-                    <div className="forecast-table-col">
-                      <SimpleDateTime
-                        dateSeparator="-"
-                        showTime="0"
-                        showYear="0"
-                      >
-                        {forecast.dt}
-                      </SimpleDateTime>
-                    </div>
-                    <div className="forecast-table-col  text-align-center">
-                      <span>
-                        <NumberFormat
-                          decimalScale="0"
-                          decimalSeparator=""
-                          displayType={"text"}
-                          value={forecast.temp.min}
-                        />{" "}
-                        ℃
-                      </span>
-                    </div>
-                    <div className="forecast-table-col  text-align-center">
-                      <span>
-                        <NumberFormat
-                          decimalScale="0"
-                          decimalSeparator=""
-                          displayType={"text"}
-                          value={forecast.temp.max}
-                        />{" "}
-                        ℃
-                      </span>
-                    </div>
-                    <div className="forecast-table-col-image">
-                      <img
-                        id="wicon"
-                        src={
-                          "http://openweathermap.org/img/w/" +
-                          forecast.weather[0].icon +
-                          ".png"
-                        }
-                        alt="Weather icon"
-                      />
-                    </div>
-                  </item>
+                   <ForecastTableItem dateTime={forecast.dt} temp={forecast.temp.max} iconCode={forecast.weather[0].icon} />
                 ))}
               </div>
             </section>
