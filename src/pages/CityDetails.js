@@ -20,7 +20,7 @@ function CityDetails() {
   //Get weather by country name and coordinates
   useEffect(() => {
     setLoading(true);
-    let apiKey = "df716b8afa6bab5a0fff51fadb22005f";
+    let apiKey = "API KEY HERE";
     let weatherByCityNamePath ="https://api.openweathermap.org/data/2.5/weather?q="+sessionStorage.getItem("city")+"&appid="+apiKey +"&units=metric";
     let weatherByCoordinatesPath ="https://api.openweathermap.org/data/2.5/onecall?lat=";
   

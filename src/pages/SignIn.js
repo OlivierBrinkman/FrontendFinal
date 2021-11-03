@@ -2,8 +2,8 @@ import React, { useState ,useEffect} from "react";
 import "../styles/pages/SignInSignUp.css";
 import axios from "axios";
 import { useForm } from "react-hook-form";
-import { Link, useHistory } from "react-router-dom";
-import {setCrypto, setPrivateKey} from "../authenticationHelper/Authentication"
+import { NavLink, useHistory } from "react-router-dom";
+import {setCrypto, setPrivateKey} from "../authentication/Authentication"
 import Loader from "../components/Loader";
 function SignIn() {
 

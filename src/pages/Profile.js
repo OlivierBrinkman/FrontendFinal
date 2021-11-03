@@ -3,7 +3,7 @@ import {useState} from "react";
 import "../styles/pages/Profile.css";
 import { useHistory } from "react-router-dom";
 import BreadCrumbs from '../components/BreadCrumbs';
-import { getCrypto, getPrivateKey } from "../authenticationHelper/Authentication";
+import { getCrypto, getPrivateKey } from "../authentication/Authentication";
 import Map from '../components/Map';
 
 function Profile() {
